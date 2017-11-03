@@ -15,6 +15,7 @@
 		7429F3121FAC0C41004FDF38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429F3111FAC0C41004FDF38 /* main.m */; };
 		7429F31C1FAC0C41004FDF38 /* PGGMagnifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429F31B1FAC0C41004FDF38 /* PGGMagnifierTests.m */; };
 		7429F3271FAC0C41004FDF38 /* PGGMagnifierUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429F3261FAC0C41004FDF38 /* PGGMagnifierUITests.m */; };
+		7429F3381FAC0D10004FDF38 /* PGGMagnigierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429F3371FAC0D10004FDF38 /* PGGMagnigierView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7429F3221FAC0C41004FDF38 /* PGGMagnifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGGMagnifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7429F3261FAC0C41004FDF38 /* PGGMagnifierUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGMagnifierUITests.m; sourceTree = "<group>"; };
 		7429F3281FAC0C41004FDF38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7429F3361FAC0D10004FDF38 /* PGGMagnigierView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGMagnigierView.h; sourceTree = "<group>"; };
+		7429F3371FAC0D10004FDF38 /* PGGMagnigierView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGMagnigierView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +108,8 @@
 				7429F3031FAC0C41004FDF38 /* AppDelegate.m */,
 				7429F3051FAC0C41004FDF38 /* ViewController.h */,
 				7429F3061FAC0C41004FDF38 /* ViewController.m */,
-				7429F3081FAC0C41004FDF38 /* Main.storyboard */,
-				7429F30B1FAC0C41004FDF38 /* Assets.xcassets */,
-				7429F30D1FAC0C41004FDF38 /* LaunchScreen.storyboard */,
-				7429F3101FAC0C41004FDF38 /* Info.plist */,
-				7429F3111FAC0C41004FDF38 /* main.m */,
+				7429F3351FAC0CAA004FDF38 /* Magnifier */,
+				7429F3341FAC0C5D004FDF38 /* source */,
 			);
 			path = PGGMagnifier;
 			sourceTree = "<group>";
@@ -130,6 +130,27 @@
 				7429F3281FAC0C41004FDF38 /* Info.plist */,
 			);
 			path = PGGMagnifierUITests;
+			sourceTree = "<group>";
+		};
+		7429F3341FAC0C5D004FDF38 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				7429F3081FAC0C41004FDF38 /* Main.storyboard */,
+				7429F30B1FAC0C41004FDF38 /* Assets.xcassets */,
+				7429F30D1FAC0C41004FDF38 /* LaunchScreen.storyboard */,
+				7429F3101FAC0C41004FDF38 /* Info.plist */,
+				7429F3111FAC0C41004FDF38 /* main.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		7429F3351FAC0CAA004FDF38 /* Magnifier */ = {
+			isa = PBXGroup;
+			children = (
+				7429F3361FAC0D10004FDF38 /* PGGMagnigierView.h */,
+				7429F3371FAC0D10004FDF38 /* PGGMagnigierView.m */,
+			);
+			path = Magnifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7429F3071FAC0C41004FDF38 /* ViewController.m in Sources */,
+				7429F3381FAC0D10004FDF38 /* PGGMagnigierView.m in Sources */,
 				7429F3121FAC0C41004FDF38 /* main.m in Sources */,
 				7429F3041FAC0C41004FDF38 /* AppDelegate.m in Sources */,
 			);
@@ -431,8 +453,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MRVYXC2HHB;
-				INFOPLIST_FILE = PGGMagnifier/Info.plist;
+				DEVELOPMENT_TEAM = H5K6RS22WJ;
+				INFOPLIST_FILE = "$(SRCROOT)/PGGMagnifier/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.PGGMagnifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,8 +467,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MRVYXC2HHB;
-				INFOPLIST_FILE = PGGMagnifier/Info.plist;
+				DEVELOPMENT_TEAM = H5K6RS22WJ;
+				INFOPLIST_FILE = "$(SRCROOT)/PGGMagnifier/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penggege.PGGMagnifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
